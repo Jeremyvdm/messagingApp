@@ -1,0 +1,55 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>welcom new user to the register of the family messaging app</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="container">
+      <p>
+          please enter the following element to register into the family messaging app
+      </p>
+      <ion-item>
+        <ion-label floating> Email Adress</ion-label>
+        <ion-input id="txtEmail" type="email" [(ngModel)]="user.email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input id="txtPassword" type="password" [(ngModel)]="user.password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating> User Name</ion-label>
+        <ion-input id="txtUserName" type="text" [(ngModel)]="userProfile.userName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>First name</ion-label>
+        <ion-input id="txtFirstName" type="text" [(ngModel)]="userProfile.firstName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Last name</ion-label>
+        <ion-input id="txtLastName" type="text" [(ngModel)]="userProfile.lastName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Address</ion-label>
+        <ion-input id="txtAddress" type="text" [(ngModel)]="userProfile.address"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>birth date</ion-label>
+        <ion-input id="txtBirthDate" type="text" [(ngModel)]="userProfile.birthDate"></ion-input>
+      </ion-item>
+
+
+      <button ion-button (click)="register(user, userProfile)"> register</button>
+      
+  </div>
+</ion-content>
